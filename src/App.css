@@ -1,0 +1,117 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #65B741;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.tasks {
+  display: grid;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.task-text {
+  flex: 1;
+  text-decoration: none;
+  /* Add this line to remove strikethrough by default */
+}
+
+.task.completed .task-text {
+  text-decoration: none;
+  /* Add strikethrough effect for completed tasks */
+}
+
+
+.task-buttons button {
+  padding: 5px;
+  background: #65B741;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.task-buttons button:hover {
+  background: #4c8430;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.switch-buttons {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.switch-buttons button {
+  padding: 8px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  background: #65B741;
+  color: #fff;
+  outline: none;
+}
+
+.switch-buttons button.active {
+  background: #4c8430;
+}
