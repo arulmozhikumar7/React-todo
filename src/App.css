@@ -115,3 +115,19 @@ input[type="checkbox"] {
 .switch-buttons button.active {
   background: #4c8430;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .app {
+    margin: 0;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    padding: 8px;
+  }
+}
